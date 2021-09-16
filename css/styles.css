@@ -1,0 +1,23 @@
+.back {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#formPeople {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%
+}
+
+#formBook {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.form {
+    display: inline-flex;
+    justify-content: space-evenly;
+}
