@@ -7,16 +7,16 @@ class Conexao {
 	static function getConexao(){
 
 		// DADOS PARA CONEXÃO POR XAMP SERVER
-		$databaseHost = 'localhost';
-		$databaseName = 'exercises';
-		$databaseUsername = 'root';
-		$databasePassword = '';
+		// $databaseHost = 'localhost';
+		// $databaseName = 'exercises';
+		// $databaseUsername = 'root';
+		// $databasePassword = '';
 
 		// DADOS PARA CONEXÃO POR LAMP SERVER
-		//$databaseHost = 'database:3306';
-		//$databaseName = 'lamp';
-		//$databaseUsername = 'lamp';
-		//$databasePassword = 'lamp';
+		$databaseHost = 'database:3306';
+		$databaseName = 'lamp';
+		$databaseUsername = 'lamp';
+		$databasePassword = 'lamp';
 		
 		try {
 			$dbConn = new PDO("mysql:host={$databaseHost};dbname={$databaseName}", $databaseUsername, $databasePassword);

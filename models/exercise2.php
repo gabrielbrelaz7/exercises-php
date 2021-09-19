@@ -6,7 +6,7 @@ include_once("../config.php");
     $id = $_POST['id'];
     $pet = $_POST['pet'];
     $cpf = $_POST['cpf'];
-    $response = "O CPF " .$cpf. " está validado e o cachorro é " .$pet;
+    $response = "O CPF " .$cpf. " é válido e o cachorro escolhido é " .$pet;
 
     if(isset($id)) {
 

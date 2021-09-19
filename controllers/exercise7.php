@@ -19,7 +19,6 @@
                 if (a === b && a === c & b === c) {
                     return "Equilatero"
                 } else if (a != b && a != c && b != c) {
-                    console.log("Escaleno")
                     return "Escaleno"
                 } else {
                     return "Isosceles"
@@ -27,8 +26,11 @@
             }
 
             if (a < b + c) {
+                console.log("condicao 1")
                 if (b < a + c) {
+                    console.log("condicao 2")
                     if (c < a + b) {
+                        console.log("condicao 3")
 
                         $.post('../models/exercise7.php', {
                             id: id,
@@ -43,7 +45,13 @@
                         });
 
                     }
+                    else {
+                        alert("Os lados informados não formam um triângulo")
                 }
+                }
+                else {
+                    alert("Os lados informados não formam um triângulo")
+            }
             } else {
                 alert("Os lados informados não formam um triângulo")
             }
